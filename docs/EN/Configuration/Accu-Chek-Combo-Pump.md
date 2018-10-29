@@ -121,20 +121,23 @@ There are serveral possible reasons. Try the following steps:
     **NO DEVICE** is shown.
 4.  Delete a pump already connected to the phone via Bluetooth: Under Settings / Bluetooth, remove the paired device 
     "**SpiritCombo**"
-5.  Make sure, that AAPS not running in background the loop. Deaktivate Loop in AAPS.
-6.  Now start ruffy on the phone. You may press Reset! and remove old Bonding. Then hit Connect!.
-7.  In the Bluetooth menu of the pump, go to **ADD DEVICE / ADD CONNECTION**. Press *CONNECT!** 
+5.  Make sure, AAPS is not running the loop in the background. Deaktivate Loop in AAPS.
+6.  Now start ruffy on the phone. You may press **Reset!** and remove old Bonding. Then hit **Connect!**.
+7.  In the Bluetooth menu of the pump, go to **ADD DEVICE / ADD CONNECTION**. Press **CONNECT!** 
     * Step 5 and 6 have to be in a short timing.
-8.  Now the Pump should show up the BT Name of phone to select for pairing. Here it is importand to whait at least 5s 
-    bevore you hit the select button on Pump. Otherwise the Pumpe will not send the Paring request to the Phone proberly.
+8.  Now the Pump should show up the BT Name of phone to select for pairing. Here it is importand to wait at least 5s 
+    before you hit the select button on pump. Otherwise the pump will not send the pairing request to the phone proberly.
  
-    * If Combo Pump is set to 5s Screentime out, you may test it with 40s (original setting). From experiance the time 
+    * If Combo Pump is set to 5s Screentime out, you may test it with 40s (original setting). From experience the time 
       between pump is showing up in phone until select phone is around 5-10s. In many other cases pairing just times out 
-      without successfully Pair. Later you should set it back to 5s, to meet AAPS Combo settings.
+      without successful pairing. Later you should set it back to 5s, to meet AAPS Combo settings.
     * If the pump does not show the phone as a pairing device at all, your phone's Bluetooth stack is probably not 
       compatible with the pump. Make sure you are running a new **LineageOS ≥ 14.1** or **Android ≥ 8.1 (Oreo)**. If 
       possible, try another smartphone. You can find a list of already successfully used smartphones under [AAPS Phones] 
-      (https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit#gid=698881435). 
+      (https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit#gid=698881435).
+    * In rare cases, a PIN must be entered during the pairing process on the phone, before the 10 digit security code is
+      requested. Just using the 10 digit code worked for me, the 10 digit code was then requested by ruffy
+      again on the next screen.
 
 9.  At next Pump should show up a 10 digit security code. And Ruffy a screen to enter it. So enter it in Ruffy and you 
     should be ready to go.
